@@ -6,4 +6,4 @@ def uppercase(string):
             buff += chr(ord(s) - 32)
         else:
             buff += s
-    print(buff)
+    print("{}".format(buff))
