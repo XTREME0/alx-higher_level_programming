@@ -2,7 +2,7 @@
 swtch = 0
 x = 122
 for i in range(122, 96, -1):
-    print(chr(x), end='')
+    print("{}".format(chr(x)), end='')
     if swtch == 0:
         x = i - 33
         swtch = 1
