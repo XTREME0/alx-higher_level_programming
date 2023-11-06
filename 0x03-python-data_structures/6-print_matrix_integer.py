@@ -6,5 +6,5 @@ def print_matrix_integer(matrix=[[]]):
             if swtch:
                 print(" ", end="")
             swtch = 1
-            print("{}".format(num), end="")
+            print("{:d}".format(num), end="")
         print("")
