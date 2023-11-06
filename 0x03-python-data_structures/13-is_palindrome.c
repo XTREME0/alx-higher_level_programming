@@ -12,6 +12,8 @@ int is_palindrome(listint_t **head)
 	listint_t *ptr;
 	int lst[500];
 
+	if (head == NULL)
+		return 1;
 	ptr = *head;
 	while (ptr->next != NULL)
 	{
