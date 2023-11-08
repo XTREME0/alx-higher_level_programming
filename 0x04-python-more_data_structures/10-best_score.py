@@ -2,8 +2,7 @@
 def best_score(a_dictionary):
     if a_dictionary is None:
         return None
-    maxx = max(list(a_dictionary.values()))
     for key, value in a_dictionary.items():
-        if value == maxx:
+        if value == max(list(a_dictionary.values())):
             return key
     return None
