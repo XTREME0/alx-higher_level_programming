@@ -7,7 +7,7 @@ print("Result: {:d}".format(result))
 my_list = [-1, 2, -1, 1, 7, 2, 5]
 result = uniq_add(my_list)
 print("Result: {:d}".format(result))
-my_list = [0, 2, 3, 1, 0, 2, 5]
+my_list = [0, 2, 3, 1, 0, 2, 2]
 result = uniq_add(my_list)
 print("Result: {:d}".format(result))
 my_list = None
