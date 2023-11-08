@@ -8,5 +8,6 @@ def uniq_add(my_list=[]):
     for i in range(len(lst) - 1):
         if lst[i] != lst[i + 1]:
             result += lst[i]
-    result += lst[i + 1]
+    if lst[i] != lst[i + 1]:
+        result += lst[i + 1]
     return result
