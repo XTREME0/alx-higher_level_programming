@@ -48,7 +48,7 @@ class Square:
                 print("")
         for i in range(self.__size):
             if self.__position:
-                print("_"*self.__position[0], end="")
+                print(" "*self.__position[0], end="")
             print("#"*self.__size)
 
     @property
