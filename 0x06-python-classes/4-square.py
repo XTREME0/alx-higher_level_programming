@@ -3,9 +3,11 @@
 
 
 class Square:
+    """ square class """
+
+
     __size = None
     size = None
-    """ square class """
 
     def __init__(self, size=0):
         if type(size) is not int:
@@ -22,9 +24,13 @@ class Square:
 
     @property
     def size(self):
+        """ size getter """
+
         return self.__size
     @size.setter
     def size(self, size):
+        """ size setter """
+
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
