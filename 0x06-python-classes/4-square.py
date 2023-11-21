@@ -5,7 +5,6 @@
 class Square:
     """ square class """
 
-
     __size = None
     size = None
 
@@ -27,6 +26,7 @@ class Square:
         """ size getter """
 
         return self.__size
+
     @size.setter
     def size(self, size):
         """ size setter """
