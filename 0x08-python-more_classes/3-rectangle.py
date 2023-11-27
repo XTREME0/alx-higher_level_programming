@@ -56,11 +56,11 @@ class Rectangle:
             return 0
         return (2 * self.__height + 2 * self.__width)
 
-    def __repr__(self):
+    def __str__(self):
         s = ""
         for i in range(self.__height):
             s += self.__width * "#" + '\n'
         return s
 
-    def __str__(self):
+    def __repr__(self):
         return f'<3-rectangle.Rectangle object at {hex(id(self))}>'
