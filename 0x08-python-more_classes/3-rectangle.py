@@ -61,3 +61,6 @@ class Rectangle:
         for i in range(self.__height):
             s += self.__width * "#" + '\n'
         return s
+
+    def __str__(self):
+        return f'<3-rectangle.Rectangle object at {hex(id(self))}>'
