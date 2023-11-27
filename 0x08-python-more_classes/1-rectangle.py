@@ -9,6 +9,8 @@ class Rectangle:
     __height = None
 
     def __init__(self, width=0, height=0):
+        """ initiate width and height """
+
         if width is not int:
             raise TypeError("width must be an integer")
         elif width < 0:
@@ -22,10 +24,14 @@ class Rectangle:
 
     @property
     def width(self):
+        """ width getter """
+
         return self.__widt
 
     @property
     def height(self):
+        """height getter """
+
         return self.__height
 
     @width.setter
