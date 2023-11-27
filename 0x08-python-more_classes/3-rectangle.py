@@ -57,10 +57,14 @@ class Rectangle:
         return (2 * self.__height + 2 * self.__width)
 
     def __str__(self):
+        if self.__width * self.__height == 0:
+            return ""
         s = ""
         for i in range(self.__height):
             s += self.__width * "#" + '\n'
         return s
 
     def __repr__(self):
+        if self.__width * self.__height == 0:
+            return ""
         return f'<{self.__module__}.{self.__class__.__name__} object at {hex(id(self))}>'
