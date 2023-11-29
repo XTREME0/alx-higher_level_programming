@@ -69,4 +69,6 @@ class Rectangle:
     def __repr__(self):
         if self.__width * self.__height == 0:
             return ""
-        return f'<{self.__module__}.{self.__class__.__name__} object at {hex(id(self))}>'
+        x = f'<{self.__module__}.{self.__class__.__name__}'
+        x += f' object at {hex(id(self))}>'
+        return x
