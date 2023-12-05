@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-""" function to read a file and print it """
+""" read_file function """
 
 def read_file(filename=""):
+""" function to read a file and print it """
     with open(filename, 'r') as file:
         for l in file:
             print(l, end="")
