@@ -8,12 +8,5 @@ if (argc < 4) {
   process.exit();
 }
 
-let tmp = parseInt(argv[2]);
-
-for (let i = 3; i < argc; i++) {
-  if (tmp < parseInt(argv[i])) {
-    tmp = parseInt(argv[i]);
-  }
-}
-
-console.log(tmp);
+argv.sort();
+console.log(parseInt(argv[argc - 2]));
