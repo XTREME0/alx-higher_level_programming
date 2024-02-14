@@ -9,4 +9,9 @@ if (argc < 4) {
 }
 
 argv.sort();
-console.log(parseInt(argv[argc - 2]));
+let j = argc - 1;
+for (; argv[j - 1] === argv[j]; j--) {
+  // hh
+}
+
+console.log(parseInt(argv[j - 1]));
