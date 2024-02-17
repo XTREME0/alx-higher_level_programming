@@ -9,11 +9,13 @@ if __name__ == "__main__":
 
     host = "localhost"
     port = 3306
+    if argc < 3:
+        exit()
     username = argv[0]
     password = argv[1]
     db_name = argv[2]
 
-    connection = MySQLdb.connect(host=host, port=port, user=user, password=password, database=database)
+    connection = MySQLdb.connect(host=host, port=port, user=username, password=password, database=db_name)
     crs = connection.cursor()
     crs.execute("SELECT * FROM states ORDER BY 'id';")
     r = cursor.fetchall()
