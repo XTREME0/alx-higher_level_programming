@@ -24,5 +24,4 @@ if __name__ == "__main__":
                 WHERE states.name = %s\
                 ORDER BY cities.id", name)
     r = crs.fetchall()
-    for row in r:
-        print(", ".join(row))
+    print(", ".join([row[0] for row in r]))
