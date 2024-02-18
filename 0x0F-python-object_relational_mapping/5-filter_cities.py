@@ -11,6 +11,8 @@ if __name__ == "__main__":
 
     host = "localhost"
     port = 3306
+    if argc < 4:
+        exit()
     username = argv[0]
     password = argv[1]
     db_name = argv[2]
