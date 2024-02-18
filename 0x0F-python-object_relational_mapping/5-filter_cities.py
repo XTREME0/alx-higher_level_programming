@@ -25,4 +25,4 @@ if __name__ == "__main__":
                 ORDER BY cities.id", name)
     r = crs.fetchall()
     for row in r:
-        print(row)
+        print(", ".join(row))
