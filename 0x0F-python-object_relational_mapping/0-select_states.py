@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-import MySQLdb
-import sys
+""" print states from states table """
 
 if __name__ == "__main__":
+
+    import MySQLdb
+    import sys
 
     argv = sys.argv[1:]
     argc = len(argv)
@@ -15,11 +17,10 @@ if __name__ == "__main__":
     password = argv[1]
     db_name = argv[2]
 
-    connection = MySQLdb.connect(host=host, port=port, user=username, password=password, database=db_name)
+    connection = MySQLdb.connect(host=host, port=port,
+                            user=username, password=password, database=db_name)
     crs = connection.cursor()
     crs.execute("SELECT * FROM states ORDER BY 'id';")
     r = crs.fetchall()
     for row in r:
         print(row)
-    crs.close()
-    connection.close()
