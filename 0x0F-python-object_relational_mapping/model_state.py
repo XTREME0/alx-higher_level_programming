@@ -10,7 +10,7 @@ class State(Base):
     """ State Class """
 
 
-    __table = 'states'
+    __table__ = 'states'
     id = Column(Integer, autoincrement=True,
                 primary_key=True, nullable=False, unique=True)
     name = Column(String(256), nullable=False)
