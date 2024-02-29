@@ -1,3 +1,3 @@
 #!/bin/bash
-# get body when success 200
-curl -f "$1"
+# get body follow redirect
+curl -sL "$1"
