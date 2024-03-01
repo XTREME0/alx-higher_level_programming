@@ -7,7 +7,7 @@ if __name__ == "__main__":
     r = requests.get(f'https://api.github.com/repos/{sys.argv[1]}/{sys.argv[2]}/commits')
     c = 10
     for commit in r.json():
-        print(f'{commit.get("sha")}: {commit.get("author").get("login")}')
+        print(f'{commit.get("sha")}: {commit.get("commit").get("author").get("name")}')
         c -= 1
         if not c:
             break
